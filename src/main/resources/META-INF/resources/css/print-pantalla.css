@@ -1,0 +1,197 @@
+@media print {
+	
+	@page {
+		size: letter;
+		margin: 1cm 2cm 1cm 2cm;
+		/*@top-left{content:"titulo";};*/
+	}
+	
+	
+	*, *:before, *:after {
+    background: transparent !important;
+
+    box-shadow: none !important;
+    text-shadow: none !important; 
+    }
+	
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+		.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		/*float: left;*/
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+	.col-md-11 {
+		width: 91.66666667%;
+	}
+	.col-md-10 {
+		width: 83.33333333%;
+	}
+	.col-md-9 {
+		width: 75%;
+	}
+	.col-md-8 {
+		width: 66.66666667%;
+	}
+	.col-md-7 {
+		width: 58.33333333%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-5 {
+		width: 41.66666667%;
+	}
+	.col-md-4 {
+		width: 33.33333333%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+	.col-md-2 {
+		width: 16.66666667%;
+	}
+	.col-md-1 {
+		width: 8.33333333%;
+	}
+	header, footer, nav, aside {
+		display: none;
+	}
+	
+	.img-center{
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	}
+	
+	.colorBack{
+		background-color: gainsboro !important;
+	}
+	
+	.text-center {
+	    text-align: center !important;
+	}
+
+	.text-justify {
+	    text-align: justify !important;
+	}
+	
+	.d-flex {
+	    display: flex !important;
+	}
+	.justify-content-center {
+	    justify-content: center !important;
+	}
+	
+	#info{
+		display: none !important;
+	    margin-top: -100px;
+	}
+	#formPrintHeaderFotter{
+		display: contents !important;
+	}
+	#formPrint{
+		display: contents !important;
+		margin-top: -100px;
+	}
+	.row-header{
+	    position: relative;
+	    top: -40px;
+	}
+	
+	thead {display: table-header-group;} 
+   tfoot {display: table-footer-group;}
+   
+   button {display: none;}
+   
+   body {margin: 0;}
+	
+	#formPrint .colorRed{
+		color: red !important;
+	}
+	#formPrint i.iRed:before{
+		color: red !important;
+	}
+	#formPrint i.iYellow:before {
+	    color: #ffd500 !important;
+	}
+	#formPrint i.iGreen:before {
+	    color: green !important;
+	}
+	
+	#formPrint .colorRedBack{
+		background-color: rgba(255, 0, 0, 0.5) !important;
+	}
+	
+	#formPrint .divCanvas{
+		margin-left: -15%;
+	}
+
+	#formPrint .divCanvasBar{
+		display: block !important;
+	    height: 300px !important;
+	    width: 920px !important;
+	}
+	#formPrint .text-bold{
+		font-weight: bold;
+	}
+	#formPrint .divNewPage{
+		page-break-before: always !important;
+	}
+	
+	.page-number:before{
+		counter-increment: page;
+		content: "Page " counter(page);
+	}
+	
+	.page-header {
+	  position: fixed;
+	  top: 0mm;
+	  width: 100%;
+	}
+	
+	.page-footer {
+	  position: fixed;
+	  bottom: 0px;
+	  width: 100%;
+	}
+	
+	.table-of-contents ul li a::after {
+		content: leader('.') target-counter(attr(href), page);
+	}
+	
+	a[href]:after {
+		content: none !important;
+	}
+	
+	section#formPrint{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	
+	#footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		font-size: 6pt;
+		color: #0.5;
+		background: red;
+		opacity: 0.5;
+	}
+	
+	.divNewPage{
+		margin-top: 6rem !important;
+	}
+	
+	#radarChart{
+		width: 800px !important;
+		height: 400px !important;
+	}
+	
+}
+
+
+
+
+

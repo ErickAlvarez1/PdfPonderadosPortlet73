@@ -1,0 +1,81 @@
+.img-center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.txtInLine{
+	border: solid 2px #4285f4;
+}
+.txtAreaCustom{
+	border: solid 2px #4285f4;
+	width: 100%;
+}
+
+/*
+#formPrintHeaderFotter{
+	display: none;
+}
+#formPrint{
+	display: none;
+}
+*/
+
+/*
+.page-header, .page-header-space {
+  height: 50px;
+}
+*/
+/*
+.page-footer, .page-footer-space {
+  height: 180px;
+
+}
+
+.page-footer {
+  position: fixed;
+  bottom: -35px;
+  width: 100%;
+}
+*/
+
+/*
+.page {
+  page-break-after: always;
+}
+*/
+
+.divBorder{
+	border: solid 1px;
+}
+.divPunto{
+    text-align: center;
+    padding: 10px;
+    border: solid 1px;
+}
+.marginNone {
+    margin: 0px !important;
+}
+
+/*
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom : 1px dotted black;
+}
+*/
+
+.toolcustom .tooltext {
+	visibility: hidden;
+	width :120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.toolcustom:hover .tooltext{
+	visibility: visible;
+}
